@@ -7,7 +7,7 @@ import ProductsView from "./features/ProductsView";
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-gray-200">
       <Router>
         <NavbarView />
 

@@ -8,8 +8,9 @@ import CartView from "./features/CartView";
 
 function App() {
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 pt-4">
       <Router>
+
         <NavbarView />
 
         <Routes>

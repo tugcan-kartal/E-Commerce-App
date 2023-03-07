@@ -4,6 +4,7 @@ import {BrowserRouter as Router,
 } from "react-router-dom";
 import NavbarView from "./features/NavbarView";
 import ProductsView from "./features/ProductsView";
+import CartView from "./features/CartView";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<ProductsView />}/>
-          <Route path="/cards" />
+          <Route path="/Cart" element={<CartView />}/>
         </Routes>   
       </Router>   
     </div>

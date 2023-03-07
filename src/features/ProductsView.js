@@ -2,6 +2,8 @@ import React,{useEffect} from 'react';
 import {useSelector,useDispatch} from "react-redux";
 import { fetchProducts } from './productsSlice';
 
+import { addToCart } from './cartSlice';
+
 const ProductsView = () => {
 
     const dispatch=useDispatch();
@@ -23,7 +25,7 @@ const ProductsView = () => {
                     </div>
                     <div className='font-bold mt-4'>{val.title}</div>
                     <div className='text-xl font-extrabold mt-6 '>{val.price}$</div>
-                    <button className='text-white bg-purple-800 p-2 rounded-full absolute bottom-5 left-[6vw]'>Add To Cart</button>
+                    <button onClick={()=>dispatch(addToCart(val))} className='text-white bg-purple-800 p-2 rounded-full absolute bottom-5 left-[6vw]'>Add To Cart</button>
                 </div>
             ))
         }
